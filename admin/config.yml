@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "profile"
+    label: "Profile Settings"
+    files:
+      - file: "data/profile.json"
+        label: "Profile Info"
+        name: "profile"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Profile Picture", name: "profileImage", widget: "image" }
+          - { label: "Background Image", name: "backgroundImage", widget: "image" }
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "Last.fm URL", name: "lastfm", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
