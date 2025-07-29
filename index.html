@@ -2,7 +2,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Custom Profile</title>
+  <title>crd | </title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
   <style>
     body {
       margin: 0;
@@ -111,7 +112,7 @@
   <div class="card-inner">
     <div class="profile-container profile-front">
       <img class="profile-pic" src="05dbc15d63cecdd914dfaa52eb0405d5.webp" alt="Profile Picture" />
-      <h1 class="profile-name">zc</h1>
+      <h1 class="profile-name" id='profileName'>zc</h1>
     </div>
 
     <div class="profile-container profile-back">
@@ -128,5 +129,11 @@
     </div>
   </div>
 </div>
+<script>
+  const profileName = document.getElementById('profileName');
+  if (profileName) {
+    document.title = profileName.textContent;
+  }
+</script>
 </body>
 </html>
